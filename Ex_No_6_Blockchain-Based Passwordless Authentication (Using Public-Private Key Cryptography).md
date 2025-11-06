@@ -1,22 +1,17 @@
-# Experiment 6: Blockchain-Based Passwordless Authentication (Using Public-Private Key Cryptography)
-# Aim:
-To implement a secure passwordless authentication system using public-private key cryptography on Ethereum. This prevents phishing and password leaks.
+# Experiment 6: Blockchain-Based Passwordless Authentication (Using Public-Private Key Cryptography) 
 
-# Algorithm:
-Step 1: User Registration
-A user registers with their Ethereum public key (instead of a password).
+# Aim: 
+To implement a secure passwordless authentication system using public-private key cryptography on Ethereum. This prevents phishing and password leaks. 
 
+# Algorithm: 
+Step 1: User Registration 
+1. A user registers with their Ethereum public key (instead of a password). 
+Step 2: Login Process 
+2. When logging in, the user signs a random challenge message using their private key. 
+3. The smart contract verifies the signature using the user’s public key. 
 
-Step 2: Login Process
-When logging in, the user signs a random challenge message using their private key.
-
-
-The smart contract verifies the signature using the user’s public key.
-
-
-
-# Program:
-```
+# Code: 
+``` 
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.20;
 
@@ -91,26 +86,20 @@ contract PasswordlessAuthDemo {
         }
     }
 }
-```
+``` 
 
 # Expected Output:
-Users can register without a password.
 
+● Users can register without a password. 
+ 
+● Users sign a challenge with their private key for authentication. 
+ 
+● The smart contract verifies signatures to confirm identity. 
 
-Users sign a challenge with their private key for authentication.
+# Output :
 
+<img width="1427" height="936" alt="image" src="https://github.com/user-attachments/assets/8f2d1d23-e662-414b-90bb-d0916c4956e3" />
 
-The smart contract verifies signatures to confirm identity.
+# Result :
 
-
-
-# High-Level Overview:
-Eliminates password hacks & phishing attacks.
-
-
-Uses Ethereum's built-in cryptographic functions.
-
-
-Inspired by Web3 login solutions like MetaMask authentication.
-
-# RESULT: 
+Thus the code is compiled and the output is verified.
